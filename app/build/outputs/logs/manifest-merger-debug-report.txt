@@ -1,0 +1,235 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:2:1-265:12
+	xmlns:android
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:2:11-69
+	package
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:3:5-31
+		INJECTED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml
+		INJECTED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml
+		INJECTED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml
+	android:versionCode
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml
+		INJECTED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml
+uses-sdk
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:7:5-9:41
+	android:targetSdkVersion
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:9:9-38
+		INJECTED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml
+		INJECTED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:8:9-34
+		INJECTED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml
+		INJECTED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:11:5-73
+	android:name
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:11:22-70
+uses-permission#android.permission.WAKE_LOCK
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:12:5-68
+	android:name
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:12:22-65
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:13:5-81
+	android:name
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:13:22-78
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:14:5-75
+	android:name
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:14:22-72
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:15:5-80
+	android:name
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:15:22-77
+uses-permission#android.permission.INTERNET
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:16:5-67
+	android:name
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:16:22-64
+uses-permission#android.permission.BROADCAST_STICKY
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:17:5-75
+	android:name
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:17:22-72
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:18:5-76
+	android:name
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:18:22-73
+uses-permission#android.permission.CHANGE_WIFI_MULTICAST_STATE
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:19:5-86
+	android:name
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:19:22-83
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:20:5-79
+	android:name
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:20:22-76
+uses-permission#android.permission.GET_TASKS
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:21:5-68
+	android:name
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:21:22-65
+application
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:23:5-263:19
+	android:label
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:25:9-41
+	android:icon
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:24:9-38
+activity#com.nmbb.oplayer.ui.MainFragmentActivity
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:26:9-37:20
+	android:screenOrientation
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:30:13-49
+	android:label
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:29:13-45
+	android:configChanges
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:28:13-83
+	android:theme
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:31:13-60
+	android:name
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:27:13-52
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:32:13-36:29
+action#android.intent.action.MAIN
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:33:17-69
+	android:name
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:33:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:35:17-77
+	android:name
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:35:27-74
+activity#com.nmbb.oplayer.ui.VideoPlayerActivity
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:38:9-207:20
+	android:label
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:41:13-45
+	android:configChanges
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:40:13-83
+	android:theme
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:42:13-71
+	android:name
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:39:13-51
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT+android.intent.category.LAUNCHER
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:43:13-101:29
+action#android.intent.action.VIEW
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:44:17-69
+	android:name
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:44:25-66
+category#android.intent.category.DEFAULT
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:47:17-76
+	android:name
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:47:27-73
+category#android.intent.category.BROWSABLE
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:48:17-78
+	android:name
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:48:27-75
+data
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:50:17-52:45
+	android:mimeType
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:51:21-47
+	android:scheme
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:52:21-42
+intent-filter#android.intent.action.VIEW+android.intent.category.DEFAULT
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:102:13-108:29
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:109:13-118:29
+intent-filter#android.intent.action.SEND+android.intent.action.SENDTO+android.intent.action.VIEW+android.intent.category.DEFAULT
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:131:13-141:29
+action#android.intent.action.SEND
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:133:17-69
+	android:name
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:133:25-66
+action#android.intent.action.SENDTO
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:134:17-71
+	android:name
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:134:25-68
+activity#com.nmbb.oplayer.PlayerActivity
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:208:9-213:20
+	android:label
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:211:13-45
+	android:configChanges
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:210:13-83
+	android:theme
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:212:13-71
+	android:name
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:209:13-43
+activity#io.vov.vitamio.activity.InitActivity
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:214:9-219:63
+	android:windowSoftInputMode
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:219:13-60
+	android:configChanges
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:216:13-113
+	android:theme
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:218:13-60
+	android:name
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:215:13-64
+	android:launchMode
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:217:13-43
+provider#io.vov.vitamio.provider.MediaProvider
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:221:9-223:69
+	android:authorities
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:223:13-66
+	android:name
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:222:13-65
+receiver#com.nmbb.oplayer.receiver.MediaScannerReceiver
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:225:9-230:20
+	android:name
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:225:19-80
+intent-filter#com.yixia.vitamio.action.MEDIA_SCANNER_FINISHED+com.yixia.vitamio.action.MEDIA_SCANNER_STARTED
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:226:13-229:29
+action#com.yixia.vitamio.action.MEDIA_SCANNER_STARTED
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:227:17-89
+	android:name
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:227:25-86
+action#com.yixia.vitamio.action.MEDIA_SCANNER_FINISHED
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:228:17-90
+	android:name
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:228:25-87
+receiver#io.vov.vitamio.MediaScannerReceiver
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:231:9-246:20
+	android:name
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:231:19-69
+intent-filter#android.intent.action.BOOT_COMPLETED
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:232:13-234:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:233:17-79
+	android:name
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:233:25-76
+intent-filter#android.intent.action.MEDIA_MOUNTED
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:235:13-239:29
+action#android.intent.action.MEDIA_MOUNTED
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:236:17-78
+	android:name
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:236:25-75
+intent-filter#com.yixia.vitamio.action.MEDIA_SCANNER_SCAN_DIRECTORY+com.yixia.vitamio.action.MEDIA_SCANNER_SCAN_FILE
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:240:13-245:29
+action#com.yixia.vitamio.action.MEDIA_SCANNER_SCAN_FILE
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:241:17-91
+	android:name
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:241:25-88
+action#com.yixia.vitamio.action.MEDIA_SCANNER_SCAN_DIRECTORY
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:242:17-96
+	android:name
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:242:25-93
+service#io.vov.vitamio.MediaScannerService
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:248:9-254:19
+	android:exported
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:250:13-37
+	android:name
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:249:13-62
+intent-filter#io.vov.vitamio.IMediaScannerService
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:251:13-253:29
+action#io.vov.vitamio.IMediaScannerService
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:252:17-78
+	android:name
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:252:25-75
+service#io.vov.vitamio.VitamioService
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:256:9-262:19
+	android:exported
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:258:13-37
+	android:name
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:257:13-57
+intent-filter#io.vov.vitamio.IVitamioService
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:259:13-261:29
+action#io.vov.vitamio.IVitamioService
+ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:260:17-73
+	android:name
+		ADDED from D:\MyOplayer\MyOplayer\app\src\main\AndroidManifest.xml:260:25-70

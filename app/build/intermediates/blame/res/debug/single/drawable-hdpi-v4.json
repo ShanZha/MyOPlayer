@@ -1,0 +1,106 @@
+[
+    {
+        "merged": "D:\\MyOplayer\\MyOplayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\contact_list_scroll_pressed.png",
+        "source": "D:\\MyOplayer\\MyOplayer\\app\\src\\main\\res\\drawable-hdpi\\contact_list_scroll_pressed.png"
+    },
+    {
+        "merged": "D:\\MyOplayer\\MyOplayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\sd_bar_bg.9.png",
+        "source": "D:\\MyOplayer\\MyOplayer\\app\\src\\main\\res\\drawable-hdpi\\sd_bar_bg.9.png"
+    },
+    {
+        "merged": "D:\\MyOplayer\\MyOplayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\contact_list_scroll_normal.png",
+        "source": "D:\\MyOplayer\\MyOplayer\\app\\src\\main\\res\\drawable-hdpi\\contact_list_scroll_normal.png"
+    },
+    {
+        "merged": "D:\\MyOplayer\\MyOplayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\in_bubble.9.png",
+        "source": "D:\\MyOplayer\\MyOplayer\\app\\src\\main\\res\\drawable-hdpi\\in_bubble.9.png"
+    },
+    {
+        "merged": "D:\\MyOplayer\\MyOplayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\fast_scroller_overlay.png",
+        "source": "D:\\MyOplayer\\MyOplayer\\app\\src\\main\\res\\drawable-hdpi\\fast_scroller_overlay.png"
+    },
+    {
+        "merged": "D:\\MyOplayer\\MyOplayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\mediacontroller_pause01.png",
+        "source": "D:\\MyOplayer\\MyOplayer\\app\\src\\main\\res\\drawable-hdpi\\mediacontroller_pause01.png"
+    },
+    {
+        "merged": "D:\\MyOplayer\\MyOplayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\home_bg_checked.png",
+        "source": "D:\\MyOplayer\\MyOplayer\\app\\src\\main\\res\\drawable-hdpi\\home_bg_checked.png"
+    },
+    {
+        "merged": "D:\\MyOplayer\\MyOplayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\video_brightness_bg.png",
+        "source": "D:\\MyOplayer\\MyOplayer\\app\\src\\main\\res\\drawable-hdpi\\video_brightness_bg.png"
+    },
+    {
+        "merged": "D:\\MyOplayer\\MyOplayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\mediacontroller_pause02.png",
+        "source": "D:\\MyOplayer\\MyOplayer\\app\\src\\main\\res\\drawable-hdpi\\mediacontroller_pause02.png"
+    },
+    {
+        "merged": "D:\\MyOplayer\\MyOplayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\mediacontroller_bg.png",
+        "source": "D:\\MyOplayer\\MyOplayer\\app\\src\\main\\res\\drawable-hdpi\\mediacontroller_bg.png"
+    },
+    {
+        "merged": "D:\\MyOplayer\\MyOplayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_line.png",
+        "source": "D:\\MyOplayer\\MyOplayer\\app\\src\\main\\res\\drawable-hdpi\\ic_line.png"
+    },
+    {
+        "merged": "D:\\MyOplayer\\MyOplayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\video_online.png",
+        "source": "D:\\MyOplayer\\MyOplayer\\app\\src\\main\\res\\drawable-hdpi\\video_online.png"
+    },
+    {
+        "merged": "D:\\MyOplayer\\MyOplayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\video_num_front.png",
+        "source": "D:\\MyOplayer\\MyOplayer\\app\\src\\main\\res\\drawable-hdpi\\video_num_front.png"
+    },
+    {
+        "merged": "D:\\MyOplayer\\MyOplayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\video_back.png",
+        "source": "D:\\MyOplayer\\MyOplayer\\app\\src\\main\\res\\drawable-hdpi\\video_back.png"
+    },
+    {
+        "merged": "D:\\MyOplayer\\MyOplayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\mediacontroller_play01.png",
+        "source": "D:\\MyOplayer\\MyOplayer\\app\\src\\main\\res\\drawable-hdpi\\mediacontroller_play01.png"
+    },
+    {
+        "merged": "D:\\MyOplayer\\MyOplayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\mediacontroller_seekbar01.png",
+        "source": "D:\\MyOplayer\\MyOplayer\\app\\src\\main\\res\\drawable-hdpi\\mediacontroller_seekbar01.png"
+    },
+    {
+        "merged": "D:\\MyOplayer\\MyOplayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\arrow_right.png",
+        "source": "D:\\MyOplayer\\MyOplayer\\app\\src\\main\\res\\drawable-hdpi\\arrow_right.png"
+    },
+    {
+        "merged": "D:\\MyOplayer\\MyOplayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\video_num_bg.png",
+        "source": "D:\\MyOplayer\\MyOplayer\\app\\src\\main\\res\\drawable-hdpi\\video_num_bg.png"
+    },
+    {
+        "merged": "D:\\MyOplayer\\MyOplayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\video_file.png",
+        "source": "D:\\MyOplayer\\MyOplayer\\app\\src\\main\\res\\drawable-hdpi\\video_file.png"
+    },
+    {
+        "merged": "D:\\MyOplayer\\MyOplayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\mediacontroller_seekbar02.png",
+        "source": "D:\\MyOplayer\\MyOplayer\\app\\src\\main\\res\\drawable-hdpi\\mediacontroller_seekbar02.png"
+    },
+    {
+        "merged": "D:\\MyOplayer\\MyOplayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\video_volumn_bg.png",
+        "source": "D:\\MyOplayer\\MyOplayer\\app\\src\\main\\res\\drawable-hdpi\\video_volumn_bg.png"
+    },
+    {
+        "merged": "D:\\MyOplayer\\MyOplayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\icon.png",
+        "source": "D:\\MyOplayer\\MyOplayer\\app\\src\\main\\res\\drawable-hdpi\\icon.png"
+    },
+    {
+        "merged": "D:\\MyOplayer\\MyOplayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\blackscreen.png",
+        "source": "D:\\MyOplayer\\MyOplayer\\app\\src\\main\\res\\drawable-hdpi\\blackscreen.png"
+    },
+    {
+        "merged": "D:\\MyOplayer\\MyOplayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\default_thumbnail.png",
+        "source": "D:\\MyOplayer\\MyOplayer\\app\\src\\main\\res\\drawable-hdpi\\default_thumbnail.png"
+    },
+    {
+        "merged": "D:\\MyOplayer\\MyOplayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\home_bg_normal.png",
+        "source": "D:\\MyOplayer\\MyOplayer\\app\\src\\main\\res\\drawable-hdpi\\home_bg_normal.png"
+    },
+    {
+        "merged": "D:\\MyOplayer\\MyOplayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\mediacontroller_play02.png",
+        "source": "D:\\MyOplayer\\MyOplayer\\app\\src\\main\\res\\drawable-hdpi\\mediacontroller_play02.png"
+    }
+]
