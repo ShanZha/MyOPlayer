@@ -9,6 +9,7 @@ public class OPreference {
 
 	private static final String PREFERENCE_NAME = "preference.db";
 
+
 	private SharedPreferences mPreference;
 
 	public OPreference(Context ctx) {
