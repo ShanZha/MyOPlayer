@@ -1,36 +1,38 @@
 package com.nmbb.oplayer.business;
 
-import io.vov.utils.Log;
-import io.vov.vitamio.ThumbnailUtils;
-import io.vov.vitamio.provider.MediaStore.Video;
+import com.j256.ormlite.dao.Dao;
+import com.j256.ormlite.stmt.QueryBuilder;
+import com.nmbb.oplayer.database.SQLiteHelperOrm;
+import com.nmbb.oplayer.exception.Logger;
+import com.nmbb.oplayer.po.POMedia;
 
-import java.io.File;
-import java.io.FileOutputStream;
+import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-
-import net.sourceforge.pinyin4j.format.exception.BadHanyuPinyinOutputFormatCombination;
-
-import android.content.ContentValues;
-import android.content.Context;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteStatement;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-
-import com.nmbb.oplayer.database.SQLiteHelper;
-import com.nmbb.oplayer.database.TableColumns.FilesColumns;
-import com.nmbb.oplayer.po.PFile;
-import com.nmbb.oplayer.util.PinyinUtils;
+import java.util.List;
 
 public final class FileBusiness {
 
 	private static final String TABLE_NAME = "files";
 	private static final String TAG = "FileBusiness";
 
-	/** 获取所有已经排好序的列表 */
+	public static List<POMedia> getAllSortFiles(){
+		SQLiteHelperOrm db=new SQLiteHelperOrm();
+		try{
+			Dao<POMedia,Long> dao=db.getDao(POMedia.class);
+			QueryBuilder<POMedia,Long>query=dao.queryBuilder();
+			query.orderBy("title_key",true);
+			return dao.query(query.prepare());
+		}catch (SQLException e){
+			Logger.e(e);
+
+		}finally {
+			if (db!=null)
+				db.close();
+		}
+		return  new ArrayList<POMedia>();
+		//new DbHelper<POMedia>().queryForAll(POMedia.class);
+	}
+	/** 获取所有已经排好序的列表 *//*
 	public static ArrayList<PFile> getAllSortFiles(final Context ctx) {
 		ArrayList<PFile> result = new ArrayList<PFile>();
 		SQLiteHelper sqlite = new SQLiteHelper(ctx);
@@ -71,7 +73,7 @@ public final class FileBusiness {
 		return result;
 	}
 
-	/** 重命名文件 */
+	*//** 重命名文件 *//*
 	public static void renameFile(final Context ctx, final PFile p) {
 		SQLiteHelper sqlite = new SQLiteHelper(ctx);
 		SQLiteDatabase db = sqlite.getWritableDatabase();
@@ -91,7 +93,7 @@ public final class FileBusiness {
 		}
 	}
 
-	/** 删除文件 */
+	*//** 删除文件 *//*
 	public static int deleteFile(final Context ctx, final PFile p) {
 		SQLiteHelper sqlite = new SQLiteHelper(ctx);
 		SQLiteDatabase db = sqlite.getWritableDatabase();
@@ -130,7 +132,7 @@ public final class FileBusiness {
 		}
 	}
 
-	/** 批量提取视频的缩略图已经视频的宽高 */
+	*//** 批量提取视频的缩略图已经视频的宽高 *//*
 	public static ArrayList<PFile> batchBuildThumbnail(final Context ctx, final ArrayList<File> files) {
 		ArrayList<PFile> result = new ArrayList<PFile>();
 
@@ -174,7 +176,7 @@ public final class FileBusiness {
 		return result;
 	}
 
-	/** 批量插入数据 */
+	*//** 批量插入数据 *//*
 	public static void batchInsertFiles(final Context ctx, final ArrayList<File> files) {
 		SQLiteHelper sqlite = new SQLiteHelper(ctx);
 		SQLiteDatabase db = sqlite.getWritableDatabase();
@@ -204,5 +206,5 @@ public final class FileBusiness {
 			} catch (Exception e) {
 			}
 		}
-	}
+	}*/
 }

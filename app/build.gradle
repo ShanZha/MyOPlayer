@@ -22,4 +22,6 @@ dependencies {
     compile 'com.android.support:support-v4:18.0.0'
     compile files('libs/pinyin4j-2.5.0.jar')
     compile files('libs/vitamio.jar')
+    compile files('libs/ormlite-android-4.42-SNAPSHOT.jar')
+    compile files('libs/ormlite-core-4.42-SNAPSHOT.jar')
 }
