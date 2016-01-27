@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "D:\\MyOplayer\\MyOplayer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\videoview.xml",
+        "source": "D:\\MyOplayer\\MyOplayer\\app\\src\\main\\res\\layout\\videoview.xml"
+    },
+    {
+        "merged": "D:\\MyOplayer\\MyOplayer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_pager.xml",
+        "source": "D:\\MyOplayer\\MyOplayer\\app\\src\\main\\res\\layout\\fragment_pager.xml"
+    },
+    {
+        "merged": "D:\\MyOplayer\\MyOplayer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_online_item.xml",
+        "source": "D:\\MyOplayer\\MyOplayer\\app\\src\\main\\res\\layout\\fragment_online_item.xml"
+    },
+    {
+        "merged": "D:\\MyOplayer\\MyOplayer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_file_item.xml",
+        "source": "D:\\MyOplayer\\MyOplayer\\app\\src\\main\\res\\layout\\fragment_file_item.xml"
+    },
+    {
+        "merged": "D:\\MyOplayer\\MyOplayer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\common_loading.xml",
+        "source": "D:\\MyOplayer\\MyOplayer\\app\\src\\main\\res\\layout\\common_loading.xml"
+    },
+    {
+        "merged": "D:\\MyOplayer\\MyOplayer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_online.xml",
+        "source": "D:\\MyOplayer\\MyOplayer\\app\\src\\main\\res\\layout\\fragment_online.xml"
+    },
+    {
+        "merged": "D:\\MyOplayer\\MyOplayer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mediacontroller.xml",
+        "source": "D:\\MyOplayer\\MyOplayer\\app\\src\\main\\res\\layout\\mediacontroller.xml"
+    },
+    {
+        "merged": "D:\\MyOplayer\\MyOplayer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\my_media_controller.xml",
+        "source": "D:\\MyOplayer\\MyOplayer\\app\\src\\main\\res\\layout\\my_media_controller.xml"
+    },
+    {
+        "merged": "D:\\MyOplayer\\MyOplayer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_file.xml",
+        "source": "D:\\MyOplayer\\MyOplayer\\app\\src\\main\\res\\layout\\fragment_file.xml"
+    },
+    {
+        "merged": "D:\\MyOplayer\\MyOplayer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mediaplayer.xml",
+        "source": "D:\\MyOplayer\\MyOplayer\\app\\src\\main\\res\\layout\\mediaplayer.xml"
+    }
+]
