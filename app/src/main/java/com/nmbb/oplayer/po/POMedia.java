@@ -18,7 +18,7 @@ public class POMedia {
     public String title;
     /** 视频标题拼音 */
     @DatabaseField
-    public String title_pinyin;
+    public String title_key;
     /** 视频路径 */
     @DatabaseField
     public String path;

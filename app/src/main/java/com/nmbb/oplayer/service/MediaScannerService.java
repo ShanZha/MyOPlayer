@@ -250,7 +250,7 @@ public class MediaScannerService extends Service implements Runnable {
             bitmap = ThumbnailUtils.extractThumbnail(bitmap, ConvertUtils.dipToPX(ctx, ThumbnailUtils.TARGET_SIZE_MICRO_THUMBNAIL_WIDTH), ConvertUtils.dipToPX(ctx, ThumbnailUtils.TARGET_SIZE_MICRO_THUMBNAIL_HEIGHT), ThumbnailUtils.OPTIONS_RECYCLE_INPUT);
             if (bitmap != null) {
                 //将缩略图存到视频当前路径
-                File thum = new File(OPlayerApplication.OPLAYER_VIDEO_THUMB, UUID.randomUUID().toString());
+                File thum = new File(OPlayerApplication.OPLAYER_VIDEO_THUME, UUID.randomUUID().toString());
                 media.thumb_path = thum.getAbsolutePath();
                 //thum.createNewFile();
                 FileOutputStream iStream = new FileOutputStream(thum);
