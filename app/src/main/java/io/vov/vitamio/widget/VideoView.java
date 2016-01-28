@@ -4,21 +4,6 @@
 
 package io.vov.vitamio.widget;
 
-import io.vov.utils.Log;
-import io.vov.vitamio.MediaPlayer;
-import io.vov.vitamio.MediaPlayer.OnBufferingUpdateListener;
-import io.vov.vitamio.MediaPlayer.OnCompletionListener;
-import io.vov.vitamio.MediaPlayer.OnErrorListener;
-import io.vov.vitamio.MediaPlayer.OnInfoListener;
-import io.vov.vitamio.MediaPlayer.OnPreparedListener;
-import io.vov.vitamio.MediaPlayer.OnSeekCompleteListener;
-import io.vov.vitamio.MediaPlayer.OnSubtitleUpdateListener;
-import io.vov.vitamio.MediaPlayer.OnVideoSizeChangedListener;
-
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.List;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -37,12 +22,28 @@ import android.view.ViewGroup.LayoutParams;
 
 import com.nmbb.oplayer.R;
 
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.List;
+
+import io.vov.utils.Log;
+import io.vov.vitamio.MediaPlayer;
+import io.vov.vitamio.MediaPlayer.OnBufferingUpdateListener;
+import io.vov.vitamio.MediaPlayer.OnCompletionListener;
+import io.vov.vitamio.MediaPlayer.OnErrorListener;
+import io.vov.vitamio.MediaPlayer.OnInfoListener;
+import io.vov.vitamio.MediaPlayer.OnPreparedListener;
+import io.vov.vitamio.MediaPlayer.OnSeekCompleteListener;
+import io.vov.vitamio.MediaPlayer.OnSubtitleUpdateListener;
+import io.vov.vitamio.MediaPlayer.OnVideoSizeChangedListener;
+
+
 /**
  * Displays a video file. The VideoView class can load images from various
  * sources (such as resources or content providers), takes care of computing its
  * measurement from the video so that it can be used in any layout manager, and
  * provides various display options such as scaling and tinting.
- * 
+ *
  * VideoView also provide many wrapper methods for
  * {@link io.vov.vitamio.MediaPlayer}, such as {@link #getVideoWidth()},
  * {@link #setSubShown(boolean)}
@@ -117,7 +118,7 @@ public class VideoView extends SurfaceView implements MediaController.MediaPlaye
 
 	/**
 	 * Set the display options
-	 * 
+	 *
 	 * @param layout <ul>
 	 * <li>{@link #VIDEO_LAYOUT_ORIGIN}
 	 * <li>{@link #VIDEO_LAYOUT_SCALE}
@@ -257,6 +258,7 @@ public class VideoView extends SurfaceView implements MediaController.MediaPlaye
 	}
 
 	OnVideoSizeChangedListener mSizeChangedListener = new OnVideoSizeChangedListener() {
+		@Override
 		public void onVideoSizeChanged(MediaPlayer mp, int width, int height) {
 			Log.d("onVideoSizeChanged: (%dx%d)", width, height);
 			mVideoWidth = mp.getVideoWidth();
@@ -268,6 +270,7 @@ public class VideoView extends SurfaceView implements MediaController.MediaPlaye
 	};
 
 	OnPreparedListener mPreparedListener = new OnPreparedListener() {
+		@Override
 		public void onPrepared(MediaPlayer mp) {
 			Log.d("onPrepared");
 			mCurrentState = STATE_PREPARED;
@@ -304,6 +307,7 @@ public class VideoView extends SurfaceView implements MediaController.MediaPlaye
 	};
 
 	private OnCompletionListener mCompletionListener = new OnCompletionListener() {
+		@Override
 		public void onCompletion(MediaPlayer mp) {
 			Log.d("onCompletion");
 			mCurrentState = STATE_PLAYBACK_COMPLETED;
@@ -316,6 +320,7 @@ public class VideoView extends SurfaceView implements MediaController.MediaPlaye
 	};
 
 	private OnErrorListener mErrorListener = new OnErrorListener() {
+		@Override
 		public boolean onError(MediaPlayer mp, int framework_err, int impl_err) {
 			Log.d("Error: %d, %d", framework_err, impl_err);
 			mCurrentState = STATE_ERROR;
@@ -332,6 +337,7 @@ public class VideoView extends SurfaceView implements MediaController.MediaPlaye
 				int message = framework_err == MediaPlayer.MEDIA_ERROR_NOT_VALID_FOR_PROGRESSIVE_PLAYBACK ? R.string.VideoView_error_text_invalid_progressive_playback : R.string.VideoView_error_text_unknown;
 
 				new AlertDialog.Builder(mContext).setTitle(R.string.VideoView_error_title).setMessage(message).setPositiveButton(R.string.VideoView_error_button, new DialogInterface.OnClickListener() {
+					@Override
 					public void onClick(DialogInterface dialog, int whichButton) {
 						if (mOnCompletionListener != null)
 							mOnCompletionListener.onCompletion(mMediaPlayer);
@@ -343,6 +349,7 @@ public class VideoView extends SurfaceView implements MediaController.MediaPlaye
 	};
 
 	private OnBufferingUpdateListener mBufferingUpdateListener = new OnBufferingUpdateListener() {
+		@Override
 		public void onBufferingUpdate(MediaPlayer mp, int percent) {
 			mCurrentBufferPercentage = percent;
 			if (mOnBufferingUpdateListener != null)
@@ -421,6 +428,7 @@ public class VideoView extends SurfaceView implements MediaController.MediaPlaye
 	}
 
 	SurfaceHolder.Callback mSHCallback = new SurfaceHolder.Callback() {
+		@Override
 		public void surfaceChanged(SurfaceHolder holder, int format, int w, int h) {
 			mSurfaceWidth = w;
 			mSurfaceHeight = h;
@@ -438,6 +446,7 @@ public class VideoView extends SurfaceView implements MediaController.MediaPlaye
 			}
 		}
 
+		@Override
 		public void surfaceCreated(SurfaceHolder holder) {
 			mSurfaceHolder = holder;
 			if (mMediaPlayer != null && mCurrentState == STATE_SUSPEND && mTargetState == STATE_RESUME) {
@@ -448,6 +457,7 @@ public class VideoView extends SurfaceView implements MediaController.MediaPlaye
 			}
 		}
 
+		@Override
 		public void surfaceDestroyed(SurfaceHolder holder) {
 			mSurfaceHolder = null;
 			if (mMediaController != null)
@@ -514,6 +524,7 @@ public class VideoView extends SurfaceView implements MediaController.MediaPlaye
 		}
 	}
 
+	@Override
 	public void start() {
 		if (isInPlaybackState()) {
 			mMediaPlayer.start();
@@ -522,6 +533,7 @@ public class VideoView extends SurfaceView implements MediaController.MediaPlaye
 		mTargetState = STATE_PLAYING;
 	}
 
+	@Override
 	public void pause() {
 		if (isInPlaybackState()) {
 			if (mMediaPlayer.isPlaying()) {
@@ -548,6 +560,7 @@ public class VideoView extends SurfaceView implements MediaController.MediaPlaye
 		}
 	}
 
+	@Override
 	public long getDuration() {
 		if (isInPlaybackState()) {
 			if (mDuration > 0)
@@ -559,12 +572,14 @@ public class VideoView extends SurfaceView implements MediaController.MediaPlaye
 		return mDuration;
 	}
 
+	@Override
 	public long getCurrentPosition() {
 		if (isInPlaybackState())
 			return mMediaPlayer.getCurrentPosition();
 		return 0;
 	}
 
+	@Override
 	public void seekTo(long msec) {
 		if (isInPlaybackState()) {
 			mMediaPlayer.seekTo(msec);
@@ -574,10 +589,12 @@ public class VideoView extends SurfaceView implements MediaController.MediaPlaye
 		}
 	}
 
+	@Override
 	public boolean isPlaying() {
 		return isInPlaybackState() && mMediaPlayer.isPlaying();
 	}
 
+	@Override
 	public int getBufferPercentage() {
 		if (mMediaPlayer != null)
 			return mCurrentBufferPercentage;
@@ -693,14 +710,17 @@ public class VideoView extends SurfaceView implements MediaController.MediaPlaye
 		return (mMediaPlayer != null && mCurrentState != STATE_ERROR && mCurrentState != STATE_IDLE && mCurrentState != STATE_PREPARING);
 	}
 
+	@Override
 	public boolean canPause() {
 		return mCanPause;
 	}
 
+	@Override
 	public boolean canSeekBackward() {
 		return mCanSeekBack;
 	}
 
+	@Override
 	public boolean canSeekForward() {
 		return mCanSeekForward;
 	}

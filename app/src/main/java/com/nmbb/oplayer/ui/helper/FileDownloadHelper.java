@@ -1,5 +1,16 @@
 package com.nmbb.oplayer.ui.helper;
 
+import android.os.Handler;
+import android.util.Log;
+
+import com.nmbb.oplayer.ui.base.ThreadPool;
+
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.DefaultHttpClient;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -8,17 +19,6 @@ import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Timer;
 import java.util.TimerTask;
-
-import org.apache.http.HttpEntity;
-import org.apache.http.HttpResponse;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.DefaultHttpClient;
-
-import android.os.Handler;
-import android.util.Log;
-
-import com.nmbb.oplayer.ui.base.ThreadPool;
 
 public class FileDownloadHelper {
 	private static final String TAG = "FileDownloadHelper";
@@ -51,7 +51,7 @@ public class FileDownloadHelper {
 
 	/**
 	 * 下载一个新的文件
-	 * 
+	 *
 	 * @param url
 	 * @param savePath
 	 */

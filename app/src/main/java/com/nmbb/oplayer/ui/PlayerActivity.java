@@ -1,8 +1,11 @@
-/*
- * Copyright (C) 2011 VOV IO (http://vov.io/)
- */
-
 package com.nmbb.oplayer.ui;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.os.Environment;
+import android.util.Log;
+import android.view.SurfaceHolder;
+import android.view.SurfaceView;
 
 import com.nmbb.oplayer.R;
 
@@ -11,12 +14,6 @@ import io.vov.vitamio.MediaPlayer.OnBufferingUpdateListener;
 import io.vov.vitamio.MediaPlayer.OnCompletionListener;
 import io.vov.vitamio.MediaPlayer.OnPreparedListener;
 import io.vov.vitamio.MediaPlayer.OnVideoSizeChangedListener;
-import android.app.Activity;
-import android.os.Bundle;
-import android.os.Environment;
-import android.util.Log;
-import android.view.SurfaceHolder;
-import android.view.SurfaceView;
 
 public class PlayerActivity extends Activity implements OnBufferingUpdateListener, OnCompletionListener, OnPreparedListener, OnVideoSizeChangedListener, SurfaceHolder.Callback {
 
@@ -58,19 +55,19 @@ public class PlayerActivity extends Activity implements OnBufferingUpdateListene
 	}
 
 	@Override
-  public void onBufferingUpdate(MediaPlayer arg0, int percent) {
+	public void onBufferingUpdate(MediaPlayer arg0, int percent) {
 		Log.d(TAG, "onBufferingUpdate percent:" + percent);
 
 	}
 
 	@Override
-  public void onCompletion(MediaPlayer arg0) {
+	public void onCompletion(MediaPlayer arg0) {
 		Log.d(TAG, "onCompletion called");
 		mMediaPlayer.release();
 	}
 
 	@Override
-  public void onVideoSizeChanged(MediaPlayer mp, int width, int height) {
+	public void onVideoSizeChanged(MediaPlayer mp, int width, int height) {
 		Log.v(TAG, "onVideoSizeChanged called");
 		if (width == 0 || height == 0) {
 			Log.e(TAG, "invalid video width(" + width + ") or height(" + height + ")");
@@ -85,7 +82,7 @@ public class PlayerActivity extends Activity implements OnBufferingUpdateListene
 	}
 
 	@Override
-  public void onPrepared(MediaPlayer mediaplayer) {
+	public void onPrepared(MediaPlayer mediaplayer) {
 		Log.d(TAG, "onPrepared called");
 		mIsVideoReadyToBePlayed = true;
 		if (mIsVideoReadyToBePlayed && mIsVideoSizeKnown) {
@@ -94,17 +91,17 @@ public class PlayerActivity extends Activity implements OnBufferingUpdateListene
 	}
 
 	@Override
-  public void surfaceChanged(SurfaceHolder surfaceholder, int i, int j, int k) {
+	public void surfaceChanged(SurfaceHolder surfaceholder, int i, int j, int k) {
 		Log.d(TAG, "surfaceChanged called" + i + "  " + j + "   " + k);
 	}
 
 	@Override
-  public void surfaceDestroyed(SurfaceHolder surfaceholder) {
+	public void surfaceDestroyed(SurfaceHolder surfaceholder) {
 		Log.d(TAG, "surfaceDestroyed called");
 	}
 
 	@Override
-  public void surfaceCreated(SurfaceHolder holder) {
+	public void surfaceCreated(SurfaceHolder holder) {
 		Log.d(TAG, "surfaceCreated called");
 		playVideo();
 	}

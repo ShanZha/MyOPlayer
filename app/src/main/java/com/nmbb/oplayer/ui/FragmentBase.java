@@ -1,7 +1,5 @@
 package com.nmbb.oplayer.ui;
 
-import com.nmbb.oplayer.R;
-
 import android.content.BroadcastReceiver;
 import android.content.IntentFilter;
 import android.database.ContentObserver;
@@ -13,16 +11,18 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
+import com.nmbb.oplayer.R;
+
 public class FragmentBase extends Fragment {
 
 	protected ListView mListView;
 	protected View mLoadingLayout;
-	protected MainFragmentActivity mParent;
+	protected MainActivity mParent;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		mParent = (MainFragmentActivity) getActivity();
+		mParent = (MainActivity) getActivity();
 	}
 
 	@Override

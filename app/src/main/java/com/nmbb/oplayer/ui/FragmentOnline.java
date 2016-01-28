@@ -1,15 +1,5 @@
 package com.nmbb.oplayer.ui;
 
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.List;
-import com.nmbb.oplayer.R;
-import com.nmbb.oplayer.po.OnlineVideo;
-import com.nmbb.oplayer.ui.base.ArrayAdapter;
-import com.nmbb.oplayer.ui.helper.XmlReaderHelper;
-import com.nmbb.oplayer.util.FileUtils;
-
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
@@ -34,6 +24,17 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.nmbb.oplayer.R;
+import com.nmbb.oplayer.po.OnlineVideo;
+import com.nmbb.oplayer.ui.base.ArrayAdapter;
+import com.nmbb.oplayer.ui.helper.XmlReaderHelper;
+import com.nmbb.oplayer.util.FileUtils;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.List;
+
 public class FragmentOnline extends FragmentBase implements OnItemClickListener {
 
 	/** 缓存视频列表 */
@@ -57,7 +58,7 @@ public class FragmentOnline extends FragmentBase implements OnItemClickListener 
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {
+							 Bundle savedInstanceState) {
 		View mView = inflater.inflate(R.layout.fragment_online, container,
 				false);
 		mListView = (ListView) mView.findViewById(android.R.id.list);
@@ -74,41 +75,41 @@ public class FragmentOnline extends FragmentBase implements OnItemClickListener 
 
 	@Override
 	public void onItemClick(AdapterView<?> parent, View view, int position,
-			long id) {
+							long id) {
 		final OnlineVideo item = mAdapter.getItem(position);
 		switch (level) {
-		case 1:// 顶级
-			level = 2;
-			if (position == 0) {
-				// 直播 
-				if (tvs == null)
-					tvs = XmlReaderHelper.getAllCategory(getActivity());
-				mAdapter.replace(tvs);
-			} else {
-				// 视频 
-				mAdapter.replace(videos);
-			}
-			mListView.setAdapter(mAdapter);
-			break;
-		case 2://
-			level = 3;
-			if (item.id != null) {
-				// 直播
-				mAdapter.replace(XmlReaderHelper.getVideos(getActivity(),
-						item.id));
+			case 1:// 顶级
+				level = 2;
+				if (position == 0) {
+					// 直播
+					if (tvs == null)
+						tvs = XmlReaderHelper.getAllCategory(getActivity());
+					mAdapter.replace(tvs);
+				} else {
+					// 视频
+					mAdapter.replace(videos);
+				}
 				mListView.setAdapter(mAdapter);
-			} else {
-				clearAndLoad(item.url);
-			}
-			break;
-		case 3:
-			level = 4;
-			// clearAndLoad(item.url);
-			Intent intent = new Intent(getActivity(), VideoPlayerActivity.class);
-			intent.putExtra("path", item.url);
-			intent.putExtra("title", item.title);
-			startActivity(intent);
-			break;
+				break;
+			case 2://
+				level = 3;
+				if (item.id != null) {
+					// 直播
+					mAdapter.replace(XmlReaderHelper.getVideos(getActivity(),
+							item.id));
+					mListView.setAdapter(mAdapter);
+				} else {
+					clearAndLoad(item.url);
+				}
+				break;
+			case 3:
+				level = 4;
+				// clearAndLoad(item.url);
+				Intent intent = new Intent(getActivity(), VideoPlayerActivity.class);
+				intent.putExtra("path", item.url);
+				intent.putExtra("title", item.title);
+				startActivity(intent);
+				break;
 		}
 	}
 
@@ -124,24 +125,24 @@ public class FragmentOnline extends FragmentBase implements OnItemClickListener 
 	@Override
 	public boolean onBackPressed() {
 		switch (level) {
-		case 1:
-			return super.onBackPressed();
-		case 2:
-			level = 1;
-			mAdapter.replace(root);
-			break;
-		case 3://
-			level = 2;
-			if (mListView == null || mListView.getVisibility() == View.VISIBLE) {
-				mAdapter.replace(tvs);
-			} else {
+			case 1:
+				return super.onBackPressed();
+			case 2:
+				level = 1;
+				mAdapter.replace(root);
+				break;
+			case 3://
+				level = 2;
+				if (mListView == null || mListView.getVisibility() == View.VISIBLE) {
+					mAdapter.replace(tvs);
+				} else {
+					switchWebViewToListView();
+				}
+				break;
+			case 4:
+				level = 3;
 				switchWebViewToListView();
-			}
-			break;
-		case 4:
-			level = 3;
-			switchWebViewToListView();
-			break;
+				break;
 		}
 		mListView.setAdapter(mAdapter);
 		return true;
@@ -187,7 +188,7 @@ public class FragmentOnline extends FragmentBase implements OnItemClickListener 
 			/** 页面跳转 */
 			@Override
 			public boolean shouldOverrideUrlLoading(WebView view,
-					final String url) {
+													final String url) {
 				if (FileUtils.isVideoOrAudio(url)) {
 					Dialog dialog = new AlertDialog.Builder(getActivity())
 							.setIcon(android.R.drawable.btn_star)
@@ -195,7 +196,7 @@ public class FragmentOnline extends FragmentBase implements OnItemClickListener 
 							.setPositiveButton("播放", new OnClickListener() {
 								@Override
 								public void onClick(DialogInterface dialog,
-										int which) {
+													int which) {
 									Intent intent = new Intent(getActivity(),
 											VideoPlayerActivity.class);
 									intent.putExtra("path", url);
@@ -205,11 +206,11 @@ public class FragmentOnline extends FragmentBase implements OnItemClickListener 
 							}).setNeutralButton("下载", new OnClickListener() {
 								@Override
 								public void onClick(DialogInterface dialog,
-										int which) {
+													int which) {
 									if (Environment.MEDIA_MOUNTED
 											.equals(Environment
 													.getExternalStorageState())) {
-										MainFragmentActivity activity = (MainFragmentActivity) getActivity();
+										MainActivity activity = (MainActivity) getActivity();
 										String savePath = Environment
 												.getExternalStorageDirectory()
 												+ "/";
@@ -220,7 +221,7 @@ public class FragmentOnline extends FragmentBase implements OnItemClickListener 
 											savePath += mTitle
 													+ "."
 													+ FileUtils
-															.getUrlExtension(url);
+													.getUrlExtension(url);
 										}
 										activity.mFileDownload.newDownloadFile(
 												url, savePath);
@@ -228,7 +229,7 @@ public class FragmentOnline extends FragmentBase implements OnItemClickListener 
 												getActivity(),
 												"正在下载 .."
 														+ FileUtils
-																.getUrlFileName(savePath)
+														.getUrlFileName(savePath)
 														+ " ，可从本地视频查看进度！",
 												Toast.LENGTH_LONG).show();
 									} else {

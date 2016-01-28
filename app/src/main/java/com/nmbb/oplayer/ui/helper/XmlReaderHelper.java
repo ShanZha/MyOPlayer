@@ -1,11 +1,8 @@
 package com.nmbb.oplayer.ui.helper;
 
-import java.io.IOException;
-import java.util.ArrayList;
+import android.content.Context;
 
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
+import com.nmbb.oplayer.po.OnlineVideo;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -14,9 +11,12 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-import android.content.Context;
+import java.io.IOException;
+import java.util.ArrayList;
 
-import com.nmbb.oplayer.po.OnlineVideo;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 
 /** 从XML读取电视台节目 */
 public class XmlReaderHelper {
@@ -61,7 +61,7 @@ public class XmlReaderHelper {
 
 	/** 读取分类下所有电视地址 */
 	public static ArrayList<OnlineVideo> getVideos(final Context context,
-			String categoryId) {
+												   String categoryId) {
 		ArrayList<OnlineVideo> result = new ArrayList<OnlineVideo>();
 		DocumentBuilderFactory docBuilderFactory = null;
 		DocumentBuilder docBuilder = null;

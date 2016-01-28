@@ -2,11 +2,11 @@
 <items version="2" >
 
     <item
-        jar="E:\Oplayer\MyOPlayer\app\libs\vitamio.jar"
+        jar="E:\Oplayer\MyOPlayer\app\libs\ormlite-core-4.42-SNAPSHOT.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="a4615ee6d2599c15db82fca9a58b86aa6a22d98a">
-        <dex dex="E:\Oplayer\MyOPlayer\app\build\intermediates\pre-dexed\debug\vitamio-edcc8ff3a7a54a513ef4a38364aab063f35a2c4e.jar" />
+        sha1="dda32f236d7eded0b8bc720b4e779965d04083ac">
+        <dex dex="E:\Oplayer\MyOPlayer\app\build\intermediates\pre-dexed\debug\ormlite-core-4.42-SNAPSHOT-829c2c15e982c4415c74f4d4c07c0b08ab8c7930.jar" />
     </item>
     <item
         jar="D:\android_studio_sdk\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
@@ -16,11 +16,25 @@
         <dex dex="E:\Oplayer\MyOPlayer\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0-6aa5c32612313a44b32755e4bfe8c18964af166e.jar" />
     </item>
     <item
+        jar="E:\Oplayer\MyOPlayer\app\libs\ormlite-android-4.42-SNAPSHOT.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1e305fc3635369dd66f08aa647f395a85e3d4614">
+        <dex dex="E:\Oplayer\MyOPlayer\app\build\intermediates\pre-dexed\debug\ormlite-android-4.42-SNAPSHOT-9c50c230305122616026fa677c43ef42349e056c.jar" />
+    </item>
+    <item
         jar="E:\Oplayer\MyOPlayer\app\libs\pinyin4j-2.5.0.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="58b76ee1873cb1e917c0ebfe14e73330f83a5ec2">
         <dex dex="E:\Oplayer\MyOPlayer\app\build\intermediates\pre-dexed\debug\pinyin4j-2.5.0-e22300ff624bd54c731b31c7a0e17ca4ba2df16f.jar" />
+    </item>
+    <item
+        jar="E:\Oplayer\MyOPlayer\app\libs\vitamio.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="811855581ea3c79bd73aecb2e0d143b9474b8f60">
+        <dex dex="E:\Oplayer\MyOPlayer\app\build\intermediates\pre-dexed\debug\vitamio-edcc8ff3a7a54a513ef4a38364aab063f35a2c4e.jar" />
     </item>
 
 </items>

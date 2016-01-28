@@ -1,16 +1,16 @@
 package com.nmbb.oplayer.ui.helper;
 
+import android.os.Build;
+import android.text.Html;
+
+import com.nmbb.oplayer.util.StringUtils;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-
-import com.nmbb.oplayer.util.StringUtils;
-
-import android.os.Build;
-import android.text.Html;
 
 public class VideoHelper {
 

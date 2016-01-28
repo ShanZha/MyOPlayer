@@ -17,7 +17,6 @@ import java.util.Map;
  */
 @SuppressWarnings({ "unchecked", "rawtypes" })
 public class DbHelper<T>  {
-    /** 新增一条记录 */
     public int create(T po){
         SQLiteHelperOrm db=new SQLiteHelperOrm();
         try{
@@ -61,7 +60,6 @@ public class DbHelper<T>  {
         }
         return  -1;
     }
-    /** 查询一条记录 */
     public List<T>queryForEq(Class<T> c,String fileName,Object value){
         SQLiteHelperOrm db=new SQLiteHelperOrm();
         try{
@@ -75,7 +73,6 @@ public class DbHelper<T>  {
         }
         return  new ArrayList<T>();
     }
-    /** 删除一条记录 */
     public int remove(T po) {
         SQLiteHelperOrm db = new SQLiteHelperOrm();
         try {
@@ -90,15 +87,7 @@ public class DbHelper<T>  {
         return -1;
     }
 
-    /**
-     * 根据特定条件更新特定字段
-     *
-     * @param c
-     * @param values
-     * @param columnName where字段
-     * @param value where值
-     * @return
-     */
+
     public int update(Class<T> c, ContentValues values, String columnName, Object value) {
         SQLiteHelperOrm db = new SQLiteHelperOrm();
         try {
@@ -118,7 +107,6 @@ public class DbHelper<T>  {
         return -1;
     }
 
-    /** 更新一条记录 */
     public int update(T po) {
         SQLiteHelperOrm db = new SQLiteHelperOrm();
         try {
@@ -134,7 +122,6 @@ public class DbHelper<T>  {
         return -1;
     }
 
-    /** 查询所有记录 */
     public List<T> queryForAll(Class<T> c) {
         SQLiteHelperOrm db = new SQLiteHelperOrm();
         try {

@@ -91,10 +91,10 @@ public final class R {
         public static final int mediacontroller_seekbar=0x7f080013;
         public static final int mediacontroller_time_current=0x7f080011;
         public static final int mediacontroller_time_total=0x7f080012;
-        public static final int operation_bg=0x7f08001b;
-        public static final int operation_full=0x7f08001c;
-        public static final int operation_percent=0x7f08001d;
-        public static final int operation_volume_brightness=0x7f08001a;
+        public static final int operation_bg=0x7f08001c;
+        public static final int operation_full=0x7f08001d;
+        public static final int operation_percent=0x7f08001e;
+        public static final int operation_volume_brightness=0x7f08001b;
         public static final int pager=0x7f08000f;
         public static final int radio_file=0x7f08000d;
         public static final int radio_online=0x7f08000e;
@@ -107,6 +107,7 @@ public final class R {
         public static final int times=0x7f080017;
         public static final int title=0x7f080007;
         public static final int url=0x7f08000b;
+        public static final int video_loading=0x7f08001a;
         public static final int webview=0x7f08000a;
     }
     public static final class layout {
@@ -143,7 +144,8 @@ public final class R {
         public static final int title_file=0x7f07000e;
         public static final int title_online=0x7f07000f;
         public static final int version_name=0x7f070010;
-        public static final int vitamio_theme_app_name=0x7f070011;
+        public static final int video_layout_loading=0x7f070011;
+        public static final int vitamio_theme_app_name=0x7f070012;
     }
     public static final class style {
         public static final int AppTheme=0x7f050000;

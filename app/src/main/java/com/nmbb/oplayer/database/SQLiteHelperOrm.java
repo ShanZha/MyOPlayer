@@ -13,7 +13,6 @@ import com.nmbb.oplayer.po.POMedia;
 import java.sql.SQLException;
 
 /**
- * ÊµÏÖOrmlite¿ò¼Ü
  * Created by xuebp on 2016/1/26.
  */
 public class SQLiteHelperOrm extends OrmLiteSqliteOpenHelper {
