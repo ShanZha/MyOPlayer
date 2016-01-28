@@ -11,12 +11,6 @@ import android.view.WindowManager;
 
 import com.nmbb.oplayer.R;
 
-import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-
-import io.vov.utils.AndroidContextUtils;
-import io.vov.utils.Log;
 import io.vov.vitamio.Vitamio;
 
 public class InitActivity extends Activity {
@@ -45,30 +39,30 @@ public class InitActivity extends Activity {
                 Vitamio.initialize(getApplicationContext());
 				if (Vitamio.isInitialized(getApplicationContext()))
 					return null;
-
-				//反射解压
-				try {
-					Class c = Class.forName("io.vov.vitamio.Vitamio");
-					Method extractLibs = c.getDeclaredMethod("extractLibs", new Class[] { android.content.Context.class, int.class });
-					extractLibs.setAccessible(true);
-					extractLibs.invoke(c, new Object[] { getApplicationContext(), R.raw.libarm });
-
-					Field vitamioLibraryPath = c.getDeclaredField("vitamioLibraryPath");
-
-					 AndroidContextUtils.getDataDir(ctx) + "libs/"
-
-				} catch (NoSuchMethodException e) {
-					Log.e("extractLibs", e);
-					e.printStackTrace();
-				} catch (IllegalArgumentException e) {
-					e.printStackTrace();
-				} catch (IllegalAccessException e) {
-					e.printStackTrace();
-				} catch (InvocationTargetException e) {
-					e.printStackTrace();
-				} catch (ClassNotFoundException e) {
-					e.printStackTrace();
-				}
+//
+//				//反射解压
+//				try {
+//					Class c = Class.forName("io.vov.vitamio.Vitamio");
+//					Method extractLibs = c.getDeclaredMethod("extractLibs", new Class[] { android.content.Context.class, int.class });
+//					extractLibs.setAccessible(true);
+//					extractLibs.invoke(c, new Object[] { getApplicationContext(), R.raw.libarm });
+//
+//					Field vitamioLibraryPath = c.getDeclaredField("vitamioLibraryPath");
+//
+//					 AndroidContextUtils.getDataDir(ctx) + "libs/"
+//
+//				} catch (NoSuchMethodException e) {
+//					Log.e("extractLibs", e);
+//					e.printStackTrace();
+//				} catch (IllegalArgumentException e) {
+//					e.printStackTrace();
+//				} catch (IllegalAccessException e) {
+//					e.printStackTrace();
+//				} catch (InvocationTargetException e) {
+//					e.printStackTrace();
+//				} catch (ClassNotFoundException e) {
+//					e.printStackTrace();
+//				}
 
                 uiHandler.sendEmptyMessage(0);
                 return null;
